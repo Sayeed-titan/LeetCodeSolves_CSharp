@@ -1,0 +1,155 @@
+namespace LeetCode_Algorithm_Solves
+{
+    internal class Program
+    {
+        public static void Main(string[] args)
+        {
+            #region 1. Two Sum
+
+            // int[] nums1 = { 2, 7, 11, 15 };
+            // int target1 = 9;
+            //
+            // int[] result1 = TwoSum(nums1, target1);
+            // Console.WriteLine($"Result 1: [{result1[0]},  {result1[1]}]");
+            //
+            #endregion
+            #region 2. Add Two Numbers
+            // int[] nums1 = { 2, 4, 3 }; // Represents 342
+            // int[] nums2 = { 5, 6, 4 }; // Represents 465
+            //
+            // ListNode l1 = CreateLinkedList(nums1);
+            // ListNode l2 = CreateLinkedList(nums2);
+            //
+            // ListNode result = AddTwoNumbers(l1, l2);
+            // Console.WriteLine("Result for Test Case 1: ");
+            // PrintLinkedList(result); // Expected Output: 7 0 8 (807)
+
+            #endregion
+            #region 3. Longest Substring Without Repeating Characters
+
+            // string[] testStrings = { "abcabcbb", "bbbbb", "pwwkew", "au" };
+            //
+            // foreach (var test in testStrings)
+            // {
+            //     int result = LengthOfLongestSubstring(test);
+            //     Console.WriteLine($"Input: {test} -> Length of the Longest Substing with Repeating Characters: {result}");
+            //
+            // }
+
+            #endregion
+            //test
+        }
+        
+        
+        #region 3. Longest Substring Without Repeating Characters
+
+        // public static int LengthOfLongestSubstring(string s)
+        // {
+        //     Dictionary<char, int> charIndexMap = new Dictionary<char, int>();  
+        //
+        //     int left = 0; 
+        //     int maxLen = 0;  
+        //
+        //     for (int right = 0; right < s.Length; right++) {
+        //    
+        //         if (charIndexMap.ContainsKey(s[right]) && charIndexMap[s[right]] >= left) {
+        //        
+        //             left = charIndexMap[s[right]] + 1;
+        //         }
+        //  
+        //         charIndexMap[s[right]] = right;
+        //
+        //         maxLen = Math.Max(maxLen, right - left + 1);
+        //     }
+        //
+        //     return maxLen;
+        // }
+        #endregion
+        #region 2. Add Two Numbers
+
+        // public  class ListNode
+        // {
+        //     public int val;
+        //     public ListNode next;
+        //
+        //     public ListNode(int val = 0, ListNode next = null)
+        //     {
+        //         this.val = val;
+        //         this.next = next; 
+        //     }
+        // }
+        // public static ListNode AddTwoNumbers(ListNode l1, ListNode l2) 
+        // {
+        //     ListNode dummyHead = new ListNode();
+        //     ListNode current = dummyHead;
+        //     int carry = 0;
+        //
+        //     while (l1 !=null || l2 != null || carry!= 0)
+        //     {
+        //         int sum = carry;
+        //
+        //         if (l1 != null)
+        //         {
+        //             sum += l1.val;
+        //             l1 = l1.next;
+        //         }
+        //
+        //         if (l2 != null)
+        //         {
+        //             sum += l2.val;
+        //             l2 = l2.next;
+        //         }
+        //
+        //         carry = sum / 10;
+        //         current.next = new ListNode(sum % 10);
+        //         current = current.next;
+        //     }
+        //
+        //     return dummyHead.next;
+        //
+        // }   
+        // public static ListNode CreateLinkedList(int[] values) {
+        //     ListNode dummyHead = new ListNode();
+        //     ListNode current = dummyHead;
+        //     foreach (int value in values) {
+        //         current.next = new ListNode(value);
+        //         current = current.next;
+        //     }
+        //     return dummyHead.next;
+        // }
+        // public static void PrintLinkedList(ListNode head) {
+        //     ListNode current = head;
+        //     while (current != null) {
+        //         Console.Write(current.val + " ");
+        //         current = current.next;
+        //     }
+        //     Console.WriteLine();
+        // }
+        
+        #endregion
+        #region 1. Two Sum
+        // static int[] TwoSum(int[] nums, int target)
+        // {
+        //     Dictionary<int, int> map = new Dictionary<int, int>();
+        //
+        //     for (int i = 0; i < nums.Length; i++)
+        //     {
+        //         int complement = target - nums[i];
+        //
+        //         if (map.ContainsKey(complement))
+        //         {
+        //             return new int[] { map[complement], i };
+        //         }
+        //
+        //         if (!map.ContainsKey((nums[i])))
+        //         {
+        //             map[nums[i]] = i;
+        //         }
+        //     }
+        //     
+        //     return new int[] { };
+        // }
+        
+        #endregion
+    }
+}
