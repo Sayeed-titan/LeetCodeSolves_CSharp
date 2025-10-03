@@ -1,3 +1,5 @@
+using System;
+
 namespace LeetCode_Algorithm_Solves
 {
     internal class Program
@@ -37,10 +39,44 @@ namespace LeetCode_Algorithm_Solves
             // }
 
             #endregion
-            //test
+            #region 9. Palindrome Number
+
+            // Console.WriteLine(IsPalindrome(121));
+
+            #endregion
+            #region 13. Roman to Integer
+
+        
+
+            #endregion
+            
         }
+
+        #region 13. Roman to Integer
+
         
-        
+
+        #endregion
+        #region 9. Palindrome Number
+
+        // public static bool IsPalindrome(int x) 
+        // {
+        //     if (x < 0 || (x % 10 == 0 && x != 0)) {
+        //         return false;
+        //     }
+        //
+        //     int reversedHalf = 0;
+        //
+        //     while (x > reversedHalf) {
+        //         reversedHalf = reversedHalf * 10 + x % 10;
+        //         x /= 10;
+        //     }
+        //
+        //     return x == reversedHalf || x == reversedHalf / 10;
+        // }
+    
+
+        #endregion
         #region 3. Longest Substring Without Repeating Characters
 
         // public static int LengthOfLongestSubstring(string s)
